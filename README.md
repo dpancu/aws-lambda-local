@@ -1,8 +1,7 @@
-
 # aws-lambda-local
 
 ## Description
-This is a simple AWS SAM project containing a single Lambda function called `test-function`.
+This is a simple AWS SAM project containing a single Lambda function called `HelloWorldFunction`.
 
 ## Prerequisites
 - AWS CLI
@@ -23,7 +22,7 @@ This is a simple AWS SAM project containing a single Lambda function called `tes
     ```
 2. Start the Lambda function locally:
     ```
-    sam local invoke test-function
+    sam local invoke HelloWorldFunction
     ```
 3. Start the API Gateway locally:
     ```
@@ -40,4 +39,5 @@ This is a simple AWS SAM project containing a single Lambda function called `tes
     sam deploy --template-file packaged.yaml --stack-name YOUR_STACK_NAME --capabilities CAPABILITY_IAM
     ```
 
-Replace `YOUR_S3_BUCKET_NAME` and `YOUR_STACK_NAME` with your actual S3 bucket name and CloudFormation stack name.
+## Additional Instructions
+You can get your lambda code and replace this in the hello_world function.
